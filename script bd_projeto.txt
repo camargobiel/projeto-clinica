@@ -1,0 +1,45 @@
+create database bd_projeto;
+
+use bd_projeto;
+
+
+create table tb_usuario(
+  id_usuario int not null primary key auto_increment,
+  login varchar(20) not null,
+  senha varchar(5) not null,
+  tipo varchar (5) not null
+);
+
+insert into tb_usuario 
+(login,senha, tipo)
+values
+('?????', '?????', 'admin'),
+('?????', '?????', 'comum');
+
+create table tb_paciente(
+id_paciente int not null primary key auto_increment,
+paciente varchar(80) not null,
+tipo_sanguineo char(2) not null,
+fator_rh char (1) not null
+);
+
+
+
+alter table tb_usuario
+  add nome varchar(80) not null; 
+
+
+
+
+update tb_usuario set nome='????????' where id_usuario=1;
+
+update tb_usuario set nome='????????' where id_usuario=2;
+
+
+
+
+
+
+
+
+
