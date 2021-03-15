@@ -13,10 +13,10 @@
 	
 <body>
     <div class="container">
-		 <h2> Login </h2>
+		 <h1> Login </h1>
 		 <form name="frmLogin"    action="" method="POST">
 			 <label for="usuario">Usuario</label>
-			 <input type="text" name="usuario" >
+			 <input type="text" name="usuario" ">
 			 <br> <br>
 			 
 			 <label for="senha">Senha </label>

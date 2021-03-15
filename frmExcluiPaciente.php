@@ -16,16 +16,16 @@
    <div class="container">
    <?php
      include "menu.php"; 
-   
    ?>
-     <h2> Exclusão de  Paciente </h2>
+    <center>
+     <h2 style = "margin-bottom:2%;"> Exclusão de  Paciente </h2>
      <form name="frmPaciente"    action="excluiPaciente.php"  method="POST">
-         <label for="paciente">Paciente</label>
+         <label for="paciente" style = "margin-bottom:20px;">Paciente</label>
 		 <?php include "consultaPacienteSelect.php"; ?>
 		  <br>
-		  <input type="submit" name="excluir" value="Excluir" >
-          <input type="reset" name="limpar" value="limpar">
-       
+      <input type="submit" name="cadastrar" class="btn btn-primary" value="Cadastrar" >
+      <input type="reset" name="limpar" class="btn btn-warning" value="Limpar">
+    </center>   
 		 
 	 </form>
    </div>

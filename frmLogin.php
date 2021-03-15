@@ -11,29 +11,29 @@
      
 </head>
 <body>
-   <div class="container">
-   
-	 
-	 
-	 
-	 
-	 
-	 <h2> Login </h2>
-     <form name="frmLogin"    action="login.php"  method="POST">
-         <label for="usuario">Usuario</label>
-         <input type="text" name="usuario" >
-		 <br> <br>
-		 
-		 <label for="senha">Senha </label>
-         <input type="password" name="senha" >
-		 
-		  <br> <br>
-		   <input type="submit" name="logar" value="Logar" >
-           <input type="reset" name="limpar" value="limpar">
-       
+  
+  <div class="container">
 
-	</form>
+	<center>
+
+	  <h1 style = "margin-bottom:10%;"> Login </h1>
+
+  <div class = "quadrado-de-login">
+    <form name="frmLogin" action="login.php"  method="POST">
+      <label for="usuario" style = "margin-top:15px;color:white;">Usuário</label>
+      <br><input type="text" name="usuario" >
+      <br> <br>
+      
+      <label for="senha" style = "color:white;">Senha </label>
+      <br><input type="password" name="senha" style = "margin-bottom:30px;" >
+	</div>
+		  <br>
+		    <input type="submit" name="logar" class="btn btn-primary" value="Logar" >
+        <input type="reset" name="limpar" class="btn btn-warning" value="Limpar">
+	  </form>
   </div>
- 
+
+  </center>
+
 </body>
 </html>

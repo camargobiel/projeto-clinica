@@ -12,51 +12,39 @@
 </head>
 	
 <body>
-   <?php
+  <?php
 	  include "menu.php";
-	
 	?>  
-   
-   
+
    <div class="container">
    <br>
-    
-     
-   
-     <h2> Cadastro Paciente </h2>
-     <form name="frmPaciente"    action="cadastraPaciente.php"  method="POST">
-         <label for="paciente">Paciente</label>
-         <input type="text" name="paciente" required="required">
-		 <br> <br>
+  <center>
+    <h2 style = "margin-bottom:5%;"> Cadastro Paciente </h2>
+    <div class = "quadrado-de-login">
+    <form name="frmPaciente" action="cadastraPaciente.php"  method="POST">
+      <label for="paciente" style = "color:white;margin-top:10px;">Paciente</label>
+      <br> <input type="text" name="paciente" required="required">
+		<br> <br>
 		 
-		 <label for="tipoSanguineo">Tipo sanguineo</label>
-         <input type="text" name="tipoSanguineo" required="required">
-		 <br> <br>
+		<label for="tipoSanguineo" style = "color:white;">Tipo sanguineo</label>
+    <br> <input type="text" name="tipoSanguineo" required="required">
+		<br> <br>
 		 
-		 <label for="fatorRh">Fator RH</label>
-         <input type="text" name="fatorRh" required="required">
+		<label for="fatorRh" style = "color:white;">Fator RH</label>
+    <br> <input type="text" name="fatorRh" required="required">
 		 
-		  <br> <br>
-      <label for="data_nasc"> Data nascimento </label>
-         <input type="date" name="data_nasc" required="required">
-		 
-		  <br> <br>
-		
-         
-           <input type="submit" name="cadastrar" value="Cadastrar" >
-           <input type="reset" name="limpar" value="limpar">
-       
-	   
-
-	</form>
-			
-		
-				
-			
-
-  </div>
+		<br> <br>
+    <label for="data_nasc" style = "color:white;"> Data nascimento </label>
+    <br> <input type="date" name="data_nasc" required="required" style = "margin-bottom:20px;">
+	
+    </div>
+		  <br> 
   
- 
- 
+      <input type="submit" name="cadastrar" class="btn btn-primary" value="Cadastrar" >
+      <input type="reset" name="limpar" class="btn btn-warning" value="Limpar">
+
+	  </form>
+  </center>
+  </div>
 </body>
 </html>

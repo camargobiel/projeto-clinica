@@ -21,7 +21,7 @@
     
       <table class="table">
   <thead>
-    <tr>
+    <tr class = "bg-primary">
       <th scope="col">id</th>
       <th scope="col">Paciente</th>
       <th scope="col">Tipo sanguineo</th>
@@ -31,7 +31,7 @@
   </thead>
     <br> 
    <h2> Lista de Pacientes </h2>
-   
+   <br>
 	<?php
        /*1-definindo a conexao -local, usuario, senha e banco de dados*/
          //$conn=mysqli_connect("localhost", "root", "","bd_projeto");

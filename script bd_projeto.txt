@@ -20,7 +20,8 @@ create table tb_paciente(
 id_paciente int not null primary key auto_increment,
 paciente varchar(80) not null,
 tipo_sanguineo char(2) not null,
-fator_rh char (1) not null
+fator_rh char (1) not null,
+data_nasc date not null
 );
 
 

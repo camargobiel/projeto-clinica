@@ -12,17 +12,16 @@
 </head>
 	<body>
        <div class="container">
-	      <div class="alert alert-primary bg-primary border border-light rounded-pill" role="alert">
+	      <div class="alert alert-primary bg-dark border border-light" role="alert">
              <?php
 			   session_start();
-			    echo "Ola, " . $_SESSION["nome"] . " você está logado como " . $_SESSION["tipo"];
-			 
+			    echo "<div style = 'color:white;'> Olá, " . $_SESSION["nome"] . ". Você está logado como <b>" . $_SESSION["tipo"] . "</b>  </div>";
 			 ?>
           </div>
 		  
 		  
-			<nav class="navbar navbar-expand-lg navbar-light bg-light text-light">
-			  <a class="navbar-brand" href="#">Clinica Camargo</a>
+			<nav class="navbar navbar-expand-lg navbar-light bg-primary text-white">
+			  <a class="navbar-brand" href="menu.php" style = "color:white;">Clinica</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
 			  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -33,23 +32,23 @@
 				<?php 
 				   if ($_SESSION["tipo"]=="admin"){
 					   
-				 echo "<a class='nav-link active' href='frmPaciente.php'>Cadastrar paciente </a>";
-				 echo " <a class='nav-link' href='consultaPaciente.php'>Consultar Paciente</a>";
-				 echo " <a class='nav-link' href='frmAlteraPaciente.php'>Alterar Paciente</a>";
-				 echo "<a class='nav-link' href='frmExcluiPaciente.php'>Excluir Paciente</a>";
+				 echo "<a class='nav-link active' href='frmPaciente.php' style = 'color:white;'>Cadastrar paciente </a>";
+				 echo " <a class='nav-link' href='consultaPaciente.php' style = 'color:white;'>Consultar Paciente</a>";
+				 echo " <a class='nav-link' href='frmAlteraPaciente.php' style = 'color:white;'>Alterar Paciente</a>";
+				 echo "<a class='nav-link' href='frmExcluiPaciente.php' style = 'color:white;'>Excluir Paciente</a>";
 				
 				   }else{
 			     	   
-				  echo "<a class='nav-link active' href=''>Cadastrar paciente </a>   ";
-				  echo " <a class='nav-link' href='consultaPaciente.php'>Consultar Paciente</a>";
-				  echo "<a class='nav-link' href=''>Alterar Paciente</a>";
-				  echo " <a class='nav-link' href=''>Excluir Paciente</a>";
+				  echo "<a class='nav-link active' href='' style = 'color:white;'>Cadastrar paciente </a>   ";
+				  echo " <a class='nav-link' href='consultaPaciente.php' style = 'color:white;'>Consultar Paciente</a>";
+				  echo "<a class='nav-link' href='' style = 'color:white;'>Alterar Paciente</a>";
+				  echo " <a class='nav-link' href='' style = 'color:white;'>Excluir Paciente</a>";
 				 }
 				 ?>
 				
 				 
 				  
-				    <a class="nav-link" href="Sair.php">Sair</a>
+				    <a class="nav-link" href="Sair.php" style = "color:white;">Sair</a>
 				  
 				</div>
 			  </div>
